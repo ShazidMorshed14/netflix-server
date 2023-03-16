@@ -8,7 +8,7 @@ const {
   removeLikedMovie,
 } = require("../controllers/user");
 
-router.route("/liked/list").get(getAllLikedList);
+router.route("/liked/list").post(getAllLikedList);
 router.route("/like").put(addLikedMovie);
 router.route("/unlike").put(removeLikedMovie);
 
